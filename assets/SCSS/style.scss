@@ -1,0 +1,12 @@
+
+@import "./variables";
+@import "./navbar";
+@import "./home";
+body
+{
+    background-color: $mainBg ;
+    font: {
+        family: $fontPoppins !important;
+    };
+}
+
