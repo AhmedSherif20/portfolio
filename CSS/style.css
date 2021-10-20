@@ -35,7 +35,8 @@
 
 /* section title */
 .section-title {
-  color: white;
+  color: #e0b068;
+  text-transform: uppercase;
 }
 
 /* line span */
@@ -57,7 +58,7 @@
   left: 0;
   right: 0;
   z-index: 9999999;
-  padding: 34px 0 18px 0 !important;
+  padding: 24px 0 18px 0 !important;
   border: 1px solid transparent;
   transition: 0.3s;
 }
@@ -117,8 +118,12 @@
   transition: 0.3s;
 }
 
+.navbar .navbar-collapse.show, .navbar .navbar-collapse.collapsing {
+  background-color: #111;
+}
+
 .navbar-sticky {
-  padding: 16px 0 9px 0 !important;
+  padding: 5px 0 1px !important;
   border-bottom: 0.5px solid #222;
   transition: 0.5s;
   background-color: #111;
@@ -180,7 +185,8 @@
 
 /* section title */
 .section-title {
-  color: white;
+  color: #e0b068;
+  text-transform: uppercase;
 }
 
 /* line span */
@@ -273,11 +279,10 @@
 }
 
 #home .home-link i {
-  animation: anchorLink 2s infinite;
+  animation: anchorLink 1.5s infinite;
   position: relative;
   top: 10%;
   right: calc(50% -14px);
-  opacity: 0;
 }
 
 @keyframes anchorLink {
@@ -332,8 +337,155 @@
   }
 }
 
+/* color change for color switcher */
+.color-change {
+  color: #e0b068;
+}
+
+/* background color change for color switcher */
+.bg-change {
+  color: #e0b068;
+}
+
+/* portfolio buttons */
+.main-btn {
+  background-color: #e0b068;
+  padding: 10px 25px;
+  text-transform: uppercase;
+  color: white;
+  font-size: 18px;
+  text-decoration: none !important;
+  display: block;
+  width: fit-content;
+  transition: 0.2s;
+  border: 1px solid transparent;
+}
+
+.main-btn:hover {
+  color: white;
+  background-color: transparent;
+  border-color: white;
+}
+
+/* section custom */
+.section {
+  padding: 90px 0 20px 0;
+}
+
+/* section title */
+.section-title {
+  color: #e0b068;
+  text-transform: uppercase;
+}
+
+/* line span */
+.line {
+  display: inline-block;
+  background: #e0b068;
+  width: 50px;
+  height: 2px;
+  border-radius: 2px;
+  vertical-align: middle;
+  margin-right: 6px;
+  line-height: 2px;
+}
+
+#about .about-content .about-information {
+  padding-top: 48px;
+  margin-top: 32px;
+}
+
+#about .about-content .about-information p {
+  color: white;
+  line-height: 1.8;
+  margin: 5px 0 20px 0;
+  width: 90%;
+}
+
+#about .about-content .about-information .signature {
+  color: #e0b068;
+  font-family: "Mrs Saint Delafield";
+  font-size: 50px;
+  margin: 50px 0;
+}
+
+#about .about-skills {
+  padding: 65px 0 40px;
+}
+
+#about .about-skills #skills {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#about .about-skills #skills .skill {
+  width: 50%;
+  margin-bottom: 18px;
+  padding: 8px;
+  flex-grow: 1;
+}
+
+#about .about-skills #skills .skill .skill-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1px 0;
+  margin-bottom: 3px;
+}
+
+#about .about-skills #skills .skill .skill-info span {
+  color: white;
+  font-size: 15px;
+}
+
+#about .about-skills #skills .skill .skill-progressbar {
+  background-color: rgba(255, 255, 255, 0.9);
+  width: 100%;
+  height: 8px;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+#about .about-skills #skills .skill .skill-progressbar .percentage {
+  height: 100%;
+  background-color: #e0b068;
+}
+
+#about .about-skills #skills .skill .skill-progressbar .percentage.HTML {
+  width: 90%;
+}
+
+#about .about-skills #skills .skill .skill-progressbar .percentage.CSS {
+  width: 85%;
+}
+
+#about .about-skills #skills .skill .skill-progressbar .percentage.SCSS {
+  width: 75%;
+}
+
+#about .about-skills #skills .skill .skill-progressbar .percentage.BS {
+  width: 95%;
+}
+
+#about .about-skills #skills .skill .skill-progressbar .percentage.JS {
+  width: 70%;
+}
+
+#about .about-skills #skills .skill .skill-progressbar .percentage.NG {
+  width: 65%;
+}
+
+@media screen and (max-width: 991px) {
+  .about-skills #skills .skill {
+    width: 100% !important;
+  }
+}
+
 body {
   background-color: #111;
   font-family: "Poppins" !important;
+  scroll-behavior: smooth;
 }
 /*# sourceMappingURL=style.css.map */

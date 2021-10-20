@@ -80,11 +80,10 @@
         overflow: hidden;
         i
         {
-            animation: anchorLink 2s infinite;
+            animation: anchorLink 1.5s infinite;
             position: relative;
             top: 10%;
             right: calc(50% -14px);
-            opacity: 0;
         }
     }
 }

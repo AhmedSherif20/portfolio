@@ -9,7 +9,7 @@
     left: 0;
     right: 0;
     z-index: 9999999;
-    padding: 34px 0 18px 0 !important;
+    padding: 24px 0 18px 0 !important;
     border: 1px solid transparent;
     transition: 0.3s;
     .navbar-brand
@@ -78,10 +78,14 @@
             }
         }
     }
+    .navbar-collapse.show , .navbar-collapse.collapsing
+    {
+        background-color: $mainBg;
+    }
 }
 .navbar-sticky
 {
-    padding: 16px 0 9px 0 !important;
+    padding: 5px 0 1px !important;
     border-bottom: 0.5px solid $secBg;
     transition: 0.5s;
     background-color: $mainBg;

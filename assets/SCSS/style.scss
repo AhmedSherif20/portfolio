@@ -2,11 +2,13 @@
 @import "./variables";
 @import "./navbar";
 @import "./home";
+@import "./about";
 body
 {
     background-color: $mainBg ;
     font: {
         family: $fontPoppins !important;
     };
+    scroll-behavior: smooth;
 }
 

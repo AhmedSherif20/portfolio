@@ -39,7 +39,8 @@
 /* section title */
 .section-title
 {
-    color: white;
+    color: $mainColor;
+    text-transform: uppercase;
 }
 /* line span */
 .line
