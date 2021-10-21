@@ -4,6 +4,7 @@
 #expertiseArea
 {
     // background-color: teal;
+    overflow-x: hidden;
     .slider
     {
         // background-color: rgba($color: tomato, $alpha: 0.5);
@@ -14,16 +15,17 @@
             color: white;
             padding: 40px 30px;
             border-radius: 5px;
+            cursor: grab;
             i
             {
                 color: $mainColor;
-                font-size: 32px;
-                margin-bottom: 12px;
+                font-size: 40px;
+                margin-bottom: 18px;
             }
             p
             {
                 width: 90%;
-                margin: 8px auto 0;
+                margin: 12px auto 0;
             }
         }
         .slick-slide 
@@ -45,7 +47,28 @@
                 height: 10px;
                 border-radius: 50%;
                 background-color: $mainColor;
+                transition: 0.2s;
             }
+            .slick-active
+            {
+                width: 25px;
+                border-radius: 30px;
+            }
+        }
+    }
+    .hire-me
+    {
+        background-color: $secBg;
+        text-align: center;
+        p
+        {
+            color: white;
+            margin-bottom: 16px;
+        }
+        h2
+        {
+            color: $mainColor;
+            margin: 16px 0;
         }
     }
 }
