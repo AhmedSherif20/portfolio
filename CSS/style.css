@@ -39,6 +39,13 @@
   text-transform: uppercase;
 }
 
+.section-p {
+  width: fit-content;
+  color: white;
+  margin: 5px auto 32px;
+  text-align: center;
+}
+
 /* line span */
 .line {
   display: inline-block;
@@ -187,6 +194,13 @@
 .section-title {
   color: #e0b068;
   text-transform: uppercase;
+}
+
+.section-p {
+  width: fit-content;
+  color: white;
+  margin: 5px auto 32px;
+  text-align: center;
 }
 
 /* line span */
@@ -378,6 +392,13 @@
   text-transform: uppercase;
 }
 
+.section-p {
+  width: fit-content;
+  color: white;
+  margin: 5px auto 32px;
+  text-align: center;
+}
+
 /* line span */
 .line {
   display: inline-block;
@@ -486,6 +507,106 @@
   .about-skills #skills .skill {
     width: 100% !important;
   }
+}
+
+/* color change for color switcher */
+.color-change {
+  color: #e0b068;
+}
+
+/* background color change for color switcher */
+.bg-change {
+  color: #e0b068;
+}
+
+/* portfolio buttons */
+.main-btn {
+  background-color: #e0b068;
+  padding: 10px 25px;
+  text-transform: uppercase;
+  color: white;
+  font-size: 18px;
+  text-decoration: none !important;
+  display: block;
+  width: fit-content;
+  transition: 0.2s;
+  border: 1px solid transparent;
+}
+
+.main-btn:hover {
+  color: white;
+  background-color: transparent;
+  border-color: white;
+}
+
+/* section custom */
+.section {
+  padding: 90px 0 20px 0;
+}
+
+/* section title */
+.section-title {
+  color: #e0b068;
+  text-transform: uppercase;
+}
+
+.section-p {
+  width: fit-content;
+  color: white;
+  margin: 5px auto 32px;
+  text-align: center;
+}
+
+/* line span */
+.line {
+  display: inline-block;
+  background: #e0b068;
+  width: 50px;
+  height: 2px;
+  border-radius: 2px;
+  vertical-align: middle;
+  margin-right: 6px;
+  line-height: 2px;
+}
+
+#expertiseArea .slider .expertise-item {
+  background-color: #222;
+  text-align: center;
+  color: white;
+  padding: 40px 30px;
+  border-radius: 5px;
+}
+
+#expertiseArea .slider .expertise-item i {
+  color: #e0b068;
+  font-size: 32px;
+  margin-bottom: 12px;
+}
+
+#expertiseArea .slider .expertise-item p {
+  width: 90%;
+  margin: 8px auto 0;
+}
+
+#expertiseArea .slider .slick-slide {
+  margin: 0 10px;
+}
+
+#expertiseArea .slider .slick-list {
+  margin: 0 -10px;
+}
+
+#expertiseArea .slider .slick-dots {
+  margin: 18px;
+  position: relative;
+  bottom: 0;
+}
+
+#expertiseArea .slider .slick-dots li {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #e0b068;
 }
 
 body {
