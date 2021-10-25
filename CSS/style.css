@@ -1188,10 +1188,64 @@
   visibility: visible;
 }
 
-body {
-  background-color: #111;
-  font-family: "Poppins" !important;
-  scroll-behavior: smooth;
+/* color change for color switcher */
+.color-change {
+  color: #e0b068;
+}
+
+/* background color change for color switcher */
+.bg-change {
+  color: #e0b068;
+}
+
+/* portfolio buttons */
+.main-btn {
+  background-color: #e0b068;
+  padding: 10px 25px;
+  text-transform: uppercase;
+  color: white;
+  font-size: 18px;
+  text-decoration: none !important;
+  display: block;
+  width: fit-content;
+  transition: 0.2s;
+  border: 1px solid transparent;
+}
+
+.main-btn:hover {
+  color: white;
+  background-color: transparent;
+  border-color: white;
+}
+
+/* section custom */
+.section {
+  padding: 90px 0 20px 0;
+}
+
+/* section title */
+.section-title {
+  color: #e0b068;
+  text-transform: uppercase;
+}
+
+.section-p {
+  width: fit-content;
+  color: white;
+  margin: 5px auto 32px;
+  text-align: center;
+}
+
+/* line span */
+.line {
+  display: inline-block;
+  background: #e0b068;
+  width: 50px;
+  height: 2px;
+  border-radius: 2px;
+  vertical-align: middle;
+  margin-right: 6px;
+  line-height: 2px;
 }
 
 footer {
@@ -1199,12 +1253,28 @@ footer {
   color: white;
 }
 
-footer span a {
+footer .footer-content span {
+  margin-bottom: 7px;
+}
+
+footer .footer-content span a {
   text-decoration: none;
   color: #e0b068;
 }
 
-footer span a:hover {
+footer .footer-content span a:hover {
   color: #e0b068;
+}
+
+@media screen and (max-width: 450px) {
+  .footer-content {
+    flex-direction: column;
+  }
+}
+
+body {
+  background-color: #111;
+  font-family: "Poppins" !important;
+  scroll-behavior: smooth;
 }
 /*# sourceMappingURL=style.css.map */
