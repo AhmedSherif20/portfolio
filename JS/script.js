@@ -1,3 +1,8 @@
+//! loading screen script
+window.onload = () => {
+    let loadingScreen = $("#loading")
+    loadingScreen.fadeOut("250")
+}
 //! NavBar Script
 let navToggleBtn = document.querySelector(".navbar-toggler");
 navToggleBtn.onclick = () => {
