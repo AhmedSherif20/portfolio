@@ -525,6 +525,12 @@
   }
 }
 
+@media screen and (max-width: 450px) {
+  #home h1 {
+    font-size: 40px !important;
+  }
+}
+
 @media screen and (max-width: 1759px) {
   .home-layout {
     top: 60%;
