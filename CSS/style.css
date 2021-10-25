@@ -525,7 +525,7 @@
   }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 400px) {
   #home h1 {
     font-size: 40px !important;
   }
