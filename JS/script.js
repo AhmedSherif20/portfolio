@@ -2,6 +2,7 @@
 window.onload = () => {
     let loadingScreen = $("#loading")
     loadingScreen.fadeOut("250")
+    $("body").css("overflow", "auto")
 }
 //! NavBar Script
 let navToggleBtn = document.querySelector(".navbar-toggler");

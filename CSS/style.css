@@ -1282,5 +1282,6 @@ body {
   background-color: #111;
   font-family: "Poppins" !important;
   scroll-behavior: smooth;
+  overflow: hidden;
 }
 /*# sourceMappingURL=style.css.map */
