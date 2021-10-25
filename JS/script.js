@@ -6,6 +6,8 @@ window.onload = () => {
 }
 //! NavBar Script
 let navToggleBtn = document.querySelector(".navbar-toggler");
+let navLinks = document.querySelectorAll(".nav-link")
+
 navToggleBtn.onclick = () => {
     let navToggleIcon = document.getElementById("navToggleIcon");
     if (navToggleIcon.classList.contains("fa-bars")) {
@@ -23,6 +25,15 @@ window.onscroll = () => {
         nav.classList.remove("navbar-sticky")
     }
 }
+
+for (let i = 0; i < navLinks.length; i++) {
+    navLinks[i].onclick = (e) => {
+        for (let i = 0; i < navLinks.length; i++) { navLinks[i].classList.remove("active") }
+        e.target.classList.add("active")
+    }
+}
+
+
 
 //! Typed Js Script
 var typed = new Typed('#typed', {
