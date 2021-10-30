@@ -683,30 +683,8 @@
 #about .about-skills #skills .skill .skill-progressbar .percentage {
   height: 100%;
   background-color: #e0b068;
-}
-
-#about .about-skills #skills .skill .skill-progressbar .percentage.HTML {
-  width: 90%;
-}
-
-#about .about-skills #skills .skill .skill-progressbar .percentage.CSS {
-  width: 85%;
-}
-
-#about .about-skills #skills .skill .skill-progressbar .percentage.SCSS {
-  width: 75%;
-}
-
-#about .about-skills #skills .skill .skill-progressbar .percentage.BS {
-  width: 95%;
-}
-
-#about .about-skills #skills .skill .skill-progressbar .percentage.JS {
-  width: 70%;
-}
-
-#about .about-skills #skills .skill .skill-progressbar .percentage.NG {
-  width: 65%;
+  width: 0%;
+  transition: 1s;
 }
 
 @media screen and (max-width: 991px) {

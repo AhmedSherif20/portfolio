@@ -72,32 +72,33 @@
                     {
                         height: 100%;
                         background-color: $mainColor;
-                        
+                        width: 0%;
+                        transition: 1s;
                     }
-                    .percentage.HTML
-                    {
-                        width: 90%;
-                    }
-                    .percentage.CSS
-                    {
-                        width: 85%;
-                    }
-                    .percentage.SCSS
-                    {
-                        width: 75%;
-                    }
-                    .percentage.BS
-                    {
-                        width: 95%;
-                    }
-                    .percentage.JS
-                    {
-                        width: 70%;
-                    }
-                    .percentage.NG
-                    {
-                        width: 65%;
-                    }
+                    // .percentage.HTML
+                    // {
+                    //     width: 90%;
+                    // }
+                    // .percentage.CSS
+                    // {
+                    //     width: 85%;
+                    // }
+                    // .percentage.SCSS
+                    // {
+                    //     width: 75%;
+                    // }
+                    // .percentage.BS
+                    // {
+                    //     width: 95%;
+                    // }
+                    // .percentage.JS
+                    // {
+                    //     width: 70%;
+                    // }
+                    // .percentage.NG
+                    // {
+                    //     width: 65%;
+                    // }
                     
                 }
             }

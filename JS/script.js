@@ -18,11 +18,23 @@ navToggleBtn.onclick = () => {
 }
 window.onscroll = () => {
     let scrollPosition = window.scrollY
+    let aboutSection = document.getElementById("about")
+    //! nav part
     let nav = document.querySelector("nav")
     if (scrollPosition > 150) {
         nav.classList.add("navbar-sticky")
     } else {
         nav.classList.remove("navbar-sticky")
+    }
+
+    //! load div part
+    if (scrollPosition > aboutSection.offsetTop) {
+        document.querySelector(".percentage.HTML").style.width = "90%"
+        document.querySelector(".percentage.CSS").style.width = "85%"
+        document.querySelector(".percentage.SCSS").style.width = "75%"
+        document.querySelector(".percentage.BS").style.width = "95%"
+        document.querySelector(".percentage.JS").style.width = "70%"
+        document.querySelector(".percentage.NG").style.width = "65%"
     }
 }
 
