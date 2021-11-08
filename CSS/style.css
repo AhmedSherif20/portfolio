@@ -903,7 +903,7 @@
 }
 
 #portfolio .works .work .work-layout {
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.85);
   position: absolute;
   top: 0;
   bottom: 0;
