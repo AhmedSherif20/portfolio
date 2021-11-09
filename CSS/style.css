@@ -1114,16 +1114,23 @@
   padding: 5px 0;
 }
 
-#contact .contact-info p {
+#contact .contact-info a {
   color: white;
   margin-bottom: 20px;
   font-size: 17px;
+  display: block;
+  text-decoration: none;
+  transition: 0.2s;
 }
 
-#contact .contact-info p i {
+#contact .contact-info a i {
   color: #e0b068;
   margin-right: 12px;
   font-size: 20px;
+}
+
+#contact .contact-info a:hover {
+  color: #e0b068;
 }
 
 #contact .contact-media .media-accounts {
