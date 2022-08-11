@@ -1,0 +1,42 @@
+.media-links,
+.media-boxes,
+.media-circles {
+    width: fit-content;
+    margin-block: 24px;
+}
+
+.media-links {
+    width: fit-content;
+
+    .media-link {
+        position: relative;
+        padding-inline: 15px;
+
+        font: {
+            size: 20px;
+            weight: 400
+        }
+
+        color: var(--as-white-color);
+        transition: all 0.25s;
+
+        &:hover {
+            color: var(--as-main-color);
+        }
+
+        &:not(:last-child):after {
+            position: absolute;
+            content: "";
+            width: 1px;
+            height: 80%;
+            background-color: rgba($color: #ddd, $alpha: 0.3);
+            top: 10%;
+            right: 0;
+
+            &:hover {
+                color: var(--as-white-color);
+
+            }
+        }
+    }
+}

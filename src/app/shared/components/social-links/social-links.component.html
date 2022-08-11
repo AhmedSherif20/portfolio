@@ -1,0 +1,12 @@
+<section class="media-links" *ngIf="linksShape == 'lines'">
+    <a [href]="[link.link]" target="_blank" class="media-link" *ngFor="let link of mediaLinks">
+        <i [class]="link.icon"></i>
+    </a>
+
+</section>
+<section class="media-boxes" *ngIf="linksShape == 'boxes'">
+    boxes
+</section>
+<section class="media-circles" *ngIf="linksShape == 'circles'">
+    circles
+</section>

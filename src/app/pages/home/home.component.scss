@@ -1,0 +1,80 @@
+#home-page {
+    min-height: 100vh;
+
+
+    .home-content {
+        h1 {
+            color: var(--as-white-color);
+
+            font: {
+                size: 70px;
+                weight: 300
+            }
+
+            span {
+                -webkit-text-stroke-color: var(--as-main-color);
+                -webkit-text-stroke-width: 1px;
+                font-weight: 700;
+                letter-spacing: 1px;
+                color: transparent;
+                transition: 0.2s;
+                cursor: none;
+
+                &:hover {
+                    color: var(--as-main-color);
+                }
+
+                &::selection {
+                    background-color: transparent;
+                }
+            }
+
+            &::selection {
+                background-color: transparent;
+            }
+        }
+
+        .job-title {
+            font-size: 24px;
+            color: var(--as-white-color);
+
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #home-page {
+        h1 {
+            font-size: 59px !important;
+        }
+
+        .line-title {
+            &::before {
+                display: none;
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: 575px) {
+    #home-page {
+        h1 {
+            font-size: 45px !important;
+        }
+
+        .home-content>span {
+            font-size: 20px !important;
+        }
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+    #home-page {
+        h1 {
+            font-size: 40px !important;
+        }
+    }
+
+}

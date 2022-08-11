@@ -1,0 +1,70 @@
+// ===================== P O P P I N S   G O O G L E   F O N T  =====================
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+
+
+// ===================== P R O J E C T   G L O B E L   V A R I A B L E S  =====================
+:root {
+    --as-main-font: 'Poppins';
+    --as-signature-font: 'Mrs Saint Delafield';
+    --as-main-color: #e0b068;
+    --as-second-color: #111;
+    --as-third-color: #222;
+    --as-white-color: #fff;
+}
+
+
+html,
+body {
+    font: {
+        family: var(--as-main-font)
+    }
+
+    ;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--as-second-color);
+}
+
+
+// ================== S H A R E D   C L A S S E S  ==================
+.fw-semi-bold {
+    font-weight: 600;
+}
+
+.line-title {
+
+    &::before {
+        content: '';
+        display: inline-block;
+        width: 50px;
+        height: 2px;
+        border-radius: 2px;
+        margin-inline-end: 6px;
+        line-height: 2px;
+        background-color: var(--as-main-color);
+        vertical-align: middle;
+    }
+}
+
+.btn-contain {
+    background-color: var(--as-main-color);
+    border-color: var(--as-main-color);
+    text-transform: uppercase;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-size: 18px;
+
+    &:hover,
+    &:focus {
+        color: var(--as-white-color);
+        border-color: var(--as-white-color);
+        background-color: transparent;
+    }
+
+    &:focus {
+        box-shadow: var(--as-main-color);
+    }
+}
