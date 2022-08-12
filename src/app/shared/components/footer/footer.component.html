@@ -1,1 +1,18 @@
-<p>footer works!</p>
+<footer class="py-3">
+    <div class="container d-flex justify-content-between align-items-center flex-column flex-md-row">
+        <p class="order-1 order-md-0 text-center">
+            © copyright 2022 Made with
+            <span>
+                <i class="fas fa-heart"></i>
+            </span>
+            by
+            <span>
+                <a routerLink="/">
+                    Ahmed Sherif
+                </a>
+            </span>
+        </p>
+
+        <img [src]="logoUrl" class="order-0 order-md-1 mb-3 mb-md-0" alt="logo">
+    </div>
+</footer>

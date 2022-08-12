@@ -40,6 +40,21 @@
 
         }
     }
+
+    .home-layout {
+        position: absolute;
+        right: 80px;
+        top: 50%;
+        transform: translateY(-50%);
+        // top: calc(50% - 868px);
+        color: #333;
+        opacity: 0.25;
+        user-select: none;
+        font-size: 150px;
+        font-weight: 900;
+        text-transform: uppercase;
+        line-height: 0.72;
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -77,4 +92,23 @@
         }
     }
 
+}
+
+@media screen and (max-width: 1759px) {
+    .home-layout {
+        top: 65% !important;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .home-layout {
+        top: 80% !important;
+        right: 75px !important;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .home-layout {
+        display: none;
+    }
 }

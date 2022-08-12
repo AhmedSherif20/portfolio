@@ -1,1 +1,37 @@
-<p>navbar works!</p>
+<!-- <nav id="as-nav">
+    <div class="container">
+        <a routerLink="/" class="nav-brand">
+            <img src="../../../../assets/images/logos/logo_1.png" class="img-fluid" alt="">
+        </a>
+    </div>
+</nav> -->
+<nav class="navbar navbar-expand-lg" [class.navbar-sticky]="scrollPosition > 150">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <img [src]="logoPath" class="img-fluid" alt="">
+        </a>
+        <div class="navbar-links d-none d-lg-block">
+            <a [routerLink]="'/'+[link.path]" routerLinkActive="active" class=" text-uppercase"
+                *ngFor="let link of navLinks">{{link.label}}</a>
+        </div>
+
+        <div class="navbar-btn d-block d-lg-none" [class.show]="mobileNav" (click)="mobileNav = !mobileNav">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+    </div>
+</nav>
+
+<div class="navbar-mobile d-block d-lg-none" [class.show]="mobileNav">
+    <a class="navbar-brand" href="#">
+        <img [src]="logoPath" class="img-fluid" alt="">
+    </a>
+    <div class="navbar-links d-flex justify-center align-items-center flex-column">
+        <a [routerLink]="'/'+[link.path]" routerLinkActive="active"
+            class="d-block text-decoration-none text-uppercase py-3 px-2" *ngFor="let link of navLinks">
+            <i [class]="link.icon"></i>
+            {{link.label}}
+        </a>
+    </div>
+</div>

@@ -11,6 +11,10 @@ export class HomeComponent implements OnInit {
     'software  Engineer',
     'frontend developer',
     'angular developer',
+    'backend developer',
+    'nodejs developer',
+    'fullstack developer',
+    'MEAN stack developer',
     'freelancer',
   ];
 
