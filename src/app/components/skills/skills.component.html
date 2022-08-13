@@ -1,0 +1,64 @@
+<section id="skills-section">
+    <div class="container">
+        <div class="skills-icon">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="line-title text-uppercase fw-semi-bold mb-4 skills-section-title">my skills</h2>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3" *ngFor="let skill of skills">
+                    <div class="skill">
+                        <div class="front d-flex justify-content-center align-items-center flex-column">
+                            <i [class]="skill.icon"></i>
+                            <h3>{{skill.title}}</h3>
+                        </div>
+                        <div class="back d-flex justify-content-center align-items-center flex-column">
+                            <p class="text-white mb-4 text-capitalize">{{skill.info}}</p>
+                            <a [href]="skill.src" target="_blank"
+                                class="btn btn-primary btn-as btn-outline btn-skill">More
+                                iNfo</a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+
+        <!-- <div class="skills-slider">
+            <swiper [pagination]="{dynamicBullets: true, clickable: true}" class="mySwiper" [breakpoints]="{
+                '@0.00': {
+                  slidesPerView: 1,
+                  spaceBetween: 10
+                },
+                '@0.75': {
+                  slidesPerView: 2,
+                  spaceBetween: 20
+                },
+                '@1.00': {
+                  slidesPerView: 3,
+                  spaceBetween: 40
+                },
+                '@1.50': {
+                  slidesPerView: 4,
+                  spaceBetween: 50
+                }
+              }">
+                <ng-template swiperSlide *ngFor="let skill of skills">
+                    <div class="skill">
+                        <div class="front d-flex justify-content-center align-items-center flex-column">
+                            <i [class]="skill.icon"></i>
+                            <h3>{{skill.title}}</h3>
+                        </div>
+                        <div class="back d-flex justify-content-center align-items-center flex-column">
+                            <p class="text-white mb-4 text-capitalize">{{skill.info}}</p>
+                            <a [href]="skill.src" target="_blank"
+                                class="btn btn-primary btn-as btn-outline btn-skill">More
+                                iNfo</a>
+                        </div>
+                    </div>
+                </ng-template>
+            </swiper>
+        </div> -->
+    </div>
+</section>

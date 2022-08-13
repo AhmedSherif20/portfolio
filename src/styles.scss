@@ -1,6 +1,6 @@
-// ===================== P O P P I N S   G O O G L E   F O N T  =====================
+// ===================== G O O G L E   F O N T S =====================
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Mrs+Saint+Delafield&display=swap');
 
 
 // ===================== P R O J E C T   G L O B E L   V A R I A B L E S  =====================
@@ -11,6 +11,10 @@
     --as-second-color: #111;
     --as-third-color: #222;
     --as-white-color: #fff;
+
+    --as-page-min-height: 100vh;
+    --as-page-top-space: 111px;
+
 }
 
 
@@ -26,6 +30,7 @@ body {
 
 body {
     background-color: var(--as-second-color);
+    perspective: 1000px;
 }
 
 /* ===== S C R O L L B A R   C S S  ===== */
@@ -70,19 +75,48 @@ body {
     }
 }
 
+.btn-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    .btn:not(:last-child) {
+        margin-inline-end: 18px;
+    }
+}
+
+
+.btn-as {
+    border-radius: 5px;
+    padding: 10px 0;
+    width: 175px;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
 .btn-contain {
     background-color: var(--as-main-color);
     border-color: var(--as-main-color);
-    text-transform: uppercase;
-    border-radius: 5px;
-    padding: 10px 25px;
-    font-size: 18px;
+
 
     &:hover,
     &:focus {
         color: var(--as-white-color);
         border-color: var(--as-white-color);
         background-color: transparent;
+    }
+
+}
+
+.btn-outline {
+    color: var(--as-white-color);
+    border-color: var(--as-white-color);
+    background-color: transparent;
+
+    &:hover,
+    &:focus {
+        background-color: var(--as-main-color);
+        border-color: var(--as-main-color);
     }
 
     &:focus {

@@ -10,6 +10,9 @@ import { NavbarComponent } from './shared/components/navbar/navbar.component';
 import { FooterComponent } from './shared/components/footer/footer.component';
 import { SocialLinksComponent } from './shared/components/social-links/social-links.component';
 import { NgxTypedJsModule } from 'ngx-typed-js';
+import { InfoComponent } from './components/info/info.component';
+import { SkillsComponent } from './components/skills/skills.component';
+import { SwiperModule } from 'swiper/angular';
 
 @NgModule({
   declarations: [
@@ -20,8 +23,10 @@ import { NgxTypedJsModule } from 'ngx-typed-js';
     NavbarComponent,
     FooterComponent,
     SocialLinksComponent,
+    InfoComponent,
+    SkillsComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, NgxTypedJsModule],
+  imports: [BrowserModule, AppRoutingModule, NgxTypedJsModule, SwiperModule],
   providers: [],
   bootstrap: [AppComponent],
 })

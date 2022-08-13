@@ -1,0 +1,57 @@
+//! ------------------- Start info Style -------------------
+#info-section {
+    .info-content {
+        .info-img {
+            width: fit-content;
+            margin-inline: auto;
+
+            img {
+                width: 90%;
+            }
+        }
+
+        .info-information {
+            padding-top: 48px;
+            margin-top: 32px;
+
+            h2 {
+                color: var(--as-main-color);
+            }
+
+            p {
+                color: white;
+                line-height: 1.8;
+                margin: 5px 0 20px 0;
+                width: 90%;
+            }
+
+            .signature {
+                color: var(--as-main-color);
+
+                font: {
+                    family: var(--as-signature-font);
+                    size: 50px;
+                }
+
+                ;
+                margin: 50px 0;
+            }
+        }
+    }
+}
+
+//! ------------------- End info Style -------------------
+
+//? ------------------- Start info Responsive -------------------
+@media screen and (max-width: 991px) {
+    .info-skills {
+        #skills {
+            .skill {
+                width: 100% !important;
+            }
+        }
+    }
+
+}
+
+//? ------------------- End info Responsive -------------------
