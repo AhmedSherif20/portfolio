@@ -1,7 +1,7 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
-import SwiperCore, { Pagination } from 'swiper';
+import SwiperCore, { Navigation, Pagination } from 'swiper';
 
-SwiperCore.use([Pagination]);
+SwiperCore.use([Pagination, Navigation]);
 
 interface Skill {
   icon: string;
@@ -91,6 +91,28 @@ export class SkillsComponent implements OnInit {
       src: 'https://www.figma.com/',
     },
   ];
+
+  public swiperConfig = {
+    slidesPerView: 4,
+    spaceBetween: 30,
+    FreeMode: true,
+    navigation: true,
+    pagination: { clickable: true },
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+      },
+      768: {
+        slidesPerView: 2,
+      },
+      992: {
+        slidesPerView: 3,
+      },
+      1200: {
+        slidesPerView: 4,
+      },
+    },
+  };
 
   constructor() {}
 

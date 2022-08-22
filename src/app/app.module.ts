@@ -13,6 +13,7 @@ import { NgxTypedJsModule } from 'ngx-typed-js';
 import { InfoComponent } from './components/info/info.component';
 import { SkillsComponent } from './components/skills/skills.component';
 import { SwiperModule } from 'swiper/angular';
+import { NgxHideOnScrollModule } from 'ngx-hide-on-scroll';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,13 @@ import { SwiperModule } from 'swiper/angular';
     InfoComponent,
     SkillsComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, NgxTypedJsModule, SwiperModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    NgxTypedJsModule,
+    SwiperModule,
+    NgxHideOnScrollModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })

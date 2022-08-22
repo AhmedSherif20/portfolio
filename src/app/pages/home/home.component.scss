@@ -1,5 +1,5 @@
 #home-page {
-    min-height: 100vh;
+    min-height: calc(100vh - 111px);
 
 
     .home-content {
@@ -44,9 +44,8 @@
     .home-layout {
         position: absolute;
         right: 80px;
-        top: 50%;
+        top: 45%;
         transform: translateY(-50%);
-        // top: calc(50% - 868px);
         color: #333;
         opacity: 0.25;
         user-select: none;

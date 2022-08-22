@@ -123,3 +123,44 @@ body {
         box-shadow: var(--as-main-color);
     }
 }
+
+// ================== S W I P E R    A R R O W S  &  B U L L E T S    S T Y L E ==================
+
+// arrows
+.swiper-button-prev,
+.swiper-button-next {
+    color: var(--as-main-color);
+}
+
+.swiper-button-prev {
+    left: 0;
+}
+
+.swiper-button-next {
+    right: 0;
+}
+
+// bullets
+.swiper-horizontal>.swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+    bottom: 0px;
+}
+
+// active bullet
+span.swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background-color: var(--as-main-color);
+    opacity: 1;
+    width: 25px;
+    border-radius: 25px;
+    transition: 0.25s;
+}
+
+// target all bullets 
+.swiper-pagination-bullet {
+    background-color: var(--as-white-color);
+    opacity: 1;
+    transition: 0.25s;
+
+}
