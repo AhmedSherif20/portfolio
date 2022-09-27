@@ -85,10 +85,10 @@ export class SkillsComponent implements OnInit {
       src: 'https://nodejs.org/en/',
     },
     {
-      icon: 'fa-brands fa-figma',
-      title: 'Figma',
-      info: 'Figma: the collaborative interface design tool.',
-      src: 'https://www.figma.com/',
+      icon: 'fa-brands fa-node-js',
+      title: 'Express Js',
+      info: 'Fast, unopinionated, minimalist web framework for Node.js',
+      src: 'https://expressjs.com/',
     },
   ];
 

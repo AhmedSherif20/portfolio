@@ -1,0 +1,49 @@
+.service {
+    background-color: #222;
+    margin-bottom: 60px;
+    border: 1px solid transparent;
+    transition: 0.25s;
+    height: 72%;
+
+    .content {
+        position: relative;
+        color: var(--as-main-color);
+        // padding-top: 120px;
+
+        .icon {
+            width: 100px;
+            height: 100px;
+            line-height: 100px;
+            border: 1px solid transparent;
+            border-radius: 50%;
+            box-shadow: 3px 4px 30px hsl(0deg 0% 53% / 10%);
+            background-color: #222;
+            transition: all .25s ease-in-out;
+            font-size: 48px;
+            // transform: translateY(-100px);
+            position: absolute;
+            left: 50%;
+            top: 0;
+        }
+
+        h3 {
+            margin-block: 12px;
+
+        }
+
+        p {
+            color: var(--as-white-color);
+        }
+    }
+
+    &:hover {
+        border-color: var(--as-main-color);
+
+        .content {
+            .icon {
+                border-color: var(--as-main-color);
+
+            }
+        }
+    }
+}

@@ -14,6 +14,8 @@ import { InfoComponent } from './components/info/info.component';
 import { SkillsComponent } from './components/skills/skills.component';
 import { SwiperModule } from 'swiper/angular';
 import { NgxHideOnScrollModule } from 'ngx-hide-on-scroll';
+import { ServicesComponent } from './pages/services/services.component';
+import { ServiceComponent } from './components/service/service.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +28,8 @@ import { NgxHideOnScrollModule } from 'ngx-hide-on-scroll';
     SocialLinksComponent,
     InfoComponent,
     SkillsComponent,
+    ServicesComponent,
+    ServiceComponent,
   ],
   imports: [
     BrowserModule,

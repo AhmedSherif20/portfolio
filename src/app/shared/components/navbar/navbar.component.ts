@@ -13,6 +13,11 @@ interface Link {
   styleUrls: ['./navbar.component.scss'],
 })
 export class NavbarComponent implements OnInit {
+  @HostListener('document:keydown.escape', ['$event'])
+  onKeydownHandler(evt: KeyboardEvent) {
+    this.mobileNav = false;
+  }
+
   logoPath: string = environment.logoUrl;
   scrollPosition: number = 0;
   mobileNav: boolean = false;
@@ -35,12 +40,12 @@ export class NavbarComponent implements OnInit {
       icon: 'fa-solid fa-circle-info',
     },
     {
-      path: 'Services',
+      path: 'services',
       label: 'Services',
       icon: 'fa-solid fa-globe',
     },
     {
-      path: 'Portfolio',
+      path: 'portfolio',
       label: 'Portfolio',
       icon: 'fas fa-border-none',
     },

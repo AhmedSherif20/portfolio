@@ -1,0 +1,16 @@
+<header class="servicesHeader">
+    <div class="header-layout position-absolute d-flex justify-content-center align-items-center">
+        <h2>services</h2>
+    </div>
+</header>
+
+<section class="services my-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-lg-4 d-flex align-items-stretch" *ngFor="let service of services">
+                <app-service [icon]="service.icon" [title]="service.title" [description]="service.description">
+                </app-service>
+            </div>
+        </div>
+    </div>
+</section>
