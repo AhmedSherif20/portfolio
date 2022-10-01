@@ -1,0 +1,143 @@
+header.contact-header {
+    height: 300px;
+    position: relative;
+
+    background: {
+        image: url('../../../assets/images/contact/contact_bg.gif');
+        size: cover;
+        position: center center
+    }
+
+    ;
+
+    .contact-layout {
+        inset: 0;
+        background-color: rgba($color: #111, $alpha: 0.7);
+
+        h2 {
+            color: var(--as-main-color);
+            text-transform: uppercase;
+
+            font: {
+                size: 60px;
+                weight: 600
+            }
+
+            ;
+        }
+    }
+}
+
+.contact-content {
+    .contact {
+        h4 {
+            font-weight: 600;
+            color: white;
+            margin-bottom: 24px;
+
+            span {
+                -webkit-text-stroke-color: var(--as-main-color);
+                -webkit-text-stroke-width: 1px;
+                font-weight: 700;
+                letter-spacing: 1px;
+                color: transparent;
+                transition: 0.2s;
+
+                &:hover {
+                    color: var(--as-main-color);
+                }
+
+                &::selection {
+                    background-color: transparent;
+                }
+            }
+        }
+
+        &.contact-methods {
+
+            .info {
+                padding-bottom: 10px;
+                margin-bottom: 20px;
+                position: relative;
+
+                a {
+                    margin-bottom: 20px;
+                    color: white;
+                    font-size: 17px;
+                    display: block;
+                    text-decoration: none;
+                    transition: 0.2s;
+
+                    i {
+                        color: var(--as-main-color);
+                        margin-inline-end: 12px;
+                        font-size: 20px;
+                    }
+
+                    &:hover {
+                        color: var(--as-main-color);
+                    }
+                }
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    bottom: 0;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    background-color: rgba($color: white, $alpha: 0.3);
+                    height: 2px;
+                    width: 50%;
+                }
+            }
+        }
+
+        &.contact-forms {
+            // background-color: tomato;
+
+            form {
+                background-color: var(--as-third-color);
+                width: fit-content;
+                max-width: 100%;
+                border-radius: 5px;
+
+                .form-field {
+                    margin-bottom: 24px;
+
+                    input,
+                    textarea {
+                        outline: none;
+                        background-color: transparent;
+                        border: none;
+                        border-bottom: 1px solid var(--as-main-color);
+                        color: var(--as-main-color);
+                        width: 400px;
+                        max-width: 100%;
+
+                        &::placeholder {
+                            color: var(--as-main-color);
+                        }
+                    }
+
+                    input {
+
+                        height: 50px;
+                    }
+
+                    textarea {
+                        min-height: 100px;
+                        height: 100px;
+                        max-height: 100px;
+                    }
+
+                }
+
+                .submit-btn {
+                    button {
+                        width: fit-content !important;
+                    }
+                }
+            }
+        }
+    }
+}

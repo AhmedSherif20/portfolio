@@ -1,0 +1,81 @@
+<header class="contact-header">
+    <div class="contact-layout position-absolute d-flex justify-content-center align-items-center">
+        <h2 class="text-center">Contact Me</h2>
+    </div>
+</header>
+
+<section class="contact-content my-5">
+    <div class="container">
+        <div class="row  justify-content-center">
+            <div class="col-lg-6">
+                <div class="contact contact-methods mt-0 mt-lg-5">
+                    <div class="info">
+                        <h4>
+                            Let's make something new, different, more meaningful, and awesome?<span> Just say
+                                hello!</span>
+                        </h4>
+                        <a href="tel:+201222353412"><i class="fas fa-phone-alt"></i>+2 01222353412</a>
+                        <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJvrcjxnSNtkSDvcgcScgCtBpMQbhBJvpMkkLsDxJkQfQBqcBQqGtDDJzzlxMTCQBCHxLsB"
+                            target="_blank"><i class="fas fa-envelope"></i>ahmedsherifgml@gmail.com</a>
+                        <a href="https://www.google.com/maps/place/%D8%A7%D9%84%D8%A5%D8%B3%D9%83%D9%86%D8%AF%D8%B1%D9%8A%D8%A9%E2%80%AD/@31.197133,29.9205638,16z/data=!4m13!1m7!3m6!1s0x14f5c49126710fd3:0xb4e0cda629ee6bb9!2z2KfZhNil2LPZg9mG2K_YsdmK2Kk!3b1!8m2!3d31.2000924!4d29.9187387!3m4!1s0x14f5c49126710fd3:0xb4e0cda629ee6bb9!8m2!3d31.2000924!4d29.9187387"
+                            target="_blank"><i class="fas fa-map-marker-alt"></i>Alexandria, Egypt</a>
+                    </div>
+                    <div class="media">
+                        <h4>
+                            Or Contact Via <span>Social Media</span>
+                        </h4>
+                        <app-social-links [linksShape]="'boxes'"></app-social-links>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="contact contact-forms d-flex justify-content-center justify-content-lg-start">
+                    <form class="p-5" [formGroup]="contactForm" (ngSubmit)="sendEmail(contactForm)">
+                        <h4>
+                            Contact Me Via <span>Email</span>
+                        </h4>
+                        <div class="form-field">
+                            <input type="text" placeholder="Your Name" formControlName="name">
+                            <p class="text-danger pb-0"
+                                *ngIf="contactForm.get('name')?.errors && contactForm.get('name')?.touched">
+                                your name is required
+                            </p>
+                        </div>
+                        <div class="form-field">
+                            <input type="text" placeholder="Your Email" formControlName="email">
+                            <p class="text-danger pb-0"
+                                *ngIf="contactForm.get('email')?.errors && contactForm.get('email')?.touched">
+                                <span *ngIf="contactForm.get('email')?.errors?.['required']">
+                                    your email is required
+                                </span>
+                                <span *ngIf="contactForm.get('email')?.errors?.['email']">
+                                    your email is invalid
+                                </span>
+                            </p>
+                        </div>
+                        <div class="form-field">
+                            <input type="text" placeholder="Your Subject" formControlName="subject">
+                            <p class="text-danger pb-0"
+                                *ngIf="contactForm.get('subject')?.errors && contactForm.get('subject')?.touched">
+                                your subject is required
+                            </p>
+                        </div>
+                        <div class="form-field">
+                            <textarea placeholder="Your Message" formControlName="message"></textarea>
+                            <p class="text-danger pb-0"
+                                *ngIf="contactForm.get('message')?.errors && contactForm.get('message')?.touched">
+                                your message is required
+                            </p>
+                        </div>
+                        <div class="submit-btn text-center">
+                            <p class="text-capitalize text-danger" *ngIf="formError">All inputs required</p>
+                            <button class="btn btn-primary btn-as btn-contain px-4" type="submit">Send Your
+                                Message
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

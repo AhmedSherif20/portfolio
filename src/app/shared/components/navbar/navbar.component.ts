@@ -25,7 +25,6 @@ export class NavbarComponent implements OnInit {
   @HostListener('window:scroll', ['$event'])
   windowScroll(): void {
     this.scrollPosition = window.scrollY;
-    console.log(this.scrollPosition);
   }
 
   navLinks: Link[] = [
@@ -50,8 +49,8 @@ export class NavbarComponent implements OnInit {
       icon: 'fas fa-border-none',
     },
     {
-      path: 'Contact',
-      label: 'Contact',
+      path: 'contact',
+      label: 'contact',
       icon: 'fa-solid fa-phone',
     },
   ];

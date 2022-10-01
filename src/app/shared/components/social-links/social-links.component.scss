@@ -3,6 +3,11 @@
 .media-circles {
     width: fit-content;
     margin-block: 24px;
+
+    a {
+        text-decoration: none;
+        transition: all 0.25s;
+    }
 }
 
 .media-links {
@@ -18,7 +23,6 @@
         }
 
         color: var(--as-white-color);
-        transition: all 0.25s;
 
         &:hover {
             color: var(--as-main-color);
@@ -37,6 +41,36 @@
                 color: var(--as-white-color);
 
             }
+        }
+    }
+}
+
+.media-boxes {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    .media-box {
+        background-color: transparent;
+        color: var(--as-main-color);
+        border: 1px solid var(--as-main-color);
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-inline-end: 12px;
+        font-size: 20px;
+
+        &:hover {
+            background-color: var(--as-white-color);
+            border-color: var(--as-white-color);
+
+        }
+
+        &:last-child {
+            margin-inline-end: 0px;
         }
     }
 }
