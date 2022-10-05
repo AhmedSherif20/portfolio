@@ -18,7 +18,6 @@ import { ServicesComponent } from './pages/services/services.component';
 import { ServiceComponent } from './components/service/service.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { ReactiveFormsModule } from '@angular/forms';
-import { SweetAlert2Module } from '@sweetalert2/ngx-sweetalert2';
 import { BannerComponent } from './shared/components/banner/banner.component';
 
 @NgModule({
@@ -44,7 +43,6 @@ import { BannerComponent } from './shared/components/banner/banner.component';
     SwiperModule,
     NgxHideOnScrollModule,
     ReactiveFormsModule,
-    SweetAlert2Module.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent],
