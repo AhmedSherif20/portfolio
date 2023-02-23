@@ -1,0 +1,17 @@
+.method {
+  .method-icon {
+    i {
+      @apply text-crimson;
+    }
+
+    @apply mr-2 flex justify-center items-center text-2xl w-8;
+  }
+
+  .method-description {
+    a {
+      @apply hover:text-crimson transition-all;
+    }
+  }
+
+  @apply mb-5 last-of-type:mb-0 flex justify-start items-center;
+}

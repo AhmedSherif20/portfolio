@@ -1,0 +1,21 @@
+<section class="page px-5" [@slideDownUp]>
+    <app-page-title [title]="'what i do?'" [dotEnd]="false"></app-page-title>
+
+    <div class="services flex justify-between items-stretch flex-wrap gap-x-0">
+        <div class="service bg-white-titan dark:bg-cinder-dark hover:bg-crimson dark:hover:bg-crimson transition-all w-full md:w-1/2 mx-[-8px] mb-5 rounded"
+            *ngFor="let service of services">
+            <div class="content p-10 flex justify-start items-start flex-col lg:flex-row text-center">
+                <div class=" mx-auto mb-5 lg:mr-5 lg:ml-0">
+                    <i [class]="service.icon+ ' text-[40px]'"></i>
+                </div>
+                <div class="text-center lg:text-left">
+                    <h2 class="text-lg sm:text-2xl font-bold mb-3 ">{{service.name}}</h2>
+                    <p class=" text-sm leading-relaxed font-light">{{service.description}}.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<app-banner></app-banner>

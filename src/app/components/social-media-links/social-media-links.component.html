@@ -1,0 +1,6 @@
+<section id="media-links" class="  flex items-center justify-center py-3 absolute bottom-0 w-full">
+    <a [href]="link.link" target="_blank" class=" hover:text-crimson transition-all mr-7 last-of-type:mr-0"
+        *ngFor="let link of linksArr">
+        <i class="fa-brands" [class]="link.icon"></i>
+    </a>
+</section>

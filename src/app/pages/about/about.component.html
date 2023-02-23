@@ -1,0 +1,67 @@
+<section class="page" [@slideDownUp]>
+    <app-page-title [title]="'About Me'"></app-page-title>
+    <div class="content flex flex-wrap">
+        <div class="about w-full lg:w-3/5 mb-5 lg:mb-8">
+            <h2 class="font-semibold mb-5 text-3xl">
+                I'm
+                <span class=" text-crimson">Ahmed Sherif,</span>
+                a Software Engineer
+            </h2>
+
+            <p class=" leading-relaxed mb-5">
+                I'm an Egyptian based in Alexandria, Egypt and, I love to work with developers teams and share the
+                experience with each other and do my job perfectly.
+            </p>
+
+
+            <p class=" leading-relaxed">
+                I am working as a Frontend Developer, I use my knowledge of HTML, CSS, JavaScript, and Angular,
+                developing
+                highly interactive web applications integrating with Restful APIs or GraghQL APIs, which is responsive
+                to
+                different devices and in line with the latest design trends.
+            </p>
+
+        </div>
+        <div class="shorts w-full lg:w-2/5 lg:px-10 mb-8 lg:mb-0">
+            <p class=" mb-3 border-b-[1px] border-cinder-dark dark:border-[hsla(0,0%,98%,.12)] border-solid pb-2">
+                <span
+                    class=" relative font-semibold  w-14 inline-block after:content-[':'] after:absolute after:right-0 after:top-1/2 after:-translate-y-1/2 mr-3">Name</span>
+                <span>Ahmed Sherif</span>
+            </p>
+            <p class=" mb-3 border-b-[1px] border-cinder-dark dark:border-[hsla(0,0%,98%,.12)] border-solid pb-2">
+                <span
+                    class=" relative font-semibold  w-14 inline-block after:content-[':'] after:absolute after:right-0 after:top-1/2 after:-translate-y-1/2 mr-3">Email</span>
+                <a href="mailto:ahmedsherifgml@gmail.com" target="_blank"
+                    class="text-crimson">ahmedsherifgml@gmail.com</a>
+            </p>
+            <p class=" mb-3 border-b-[1px] border-cinder-dark dark:border-[hsla(0,0%,98%,.12)] border-solid pb-2">
+                <span
+                    class=" relative font-semibold  w-14 inline-block after:content-[':'] after:absolute after:right-0 after:top-1/2 after:-translate-y-1/2 mr-3">Age</span>
+                <span>22</span>
+            </p>
+            <p class="mb-6">
+                <span
+                    class=" relative font-semibold  w-14 inline-block after:content-[':'] after:absolute after:right-0 after:top-1/2 after:-translate-y-1/2 mr-3">From</span>
+                <span>Alexandria, Egypt</span>
+            </p>
+
+            <a href="assets/docs/Ahmed-Sherif-CV.pdf" download
+                class=" border-crimson border-solid border px-5 text-center py-2 rounded-3xl text-crimson hover:text-white-normal hover:bg-crimson transition uppercase mx-auto lg:mx-0 block w-fit">
+                Download Cv <i class="ml-1 fa-solid fa-download"></i>
+            </a>
+        </div>
+        <div class="skills w-full">
+            <app-page-title [title]="'technologies'"></app-page-title>
+            <div class="techs w-full">
+                <p *ngFor="let tech of techs"
+                    class="mb-5 flex justify-center sm:justify-start items-center flex-wrap flex-col sm:flex-row border-b-[1px] border-cinder-dark dark:border-[hsla(0,0%,98%,.12)] border-solid sm:border-0 pb-5 sm:pb-0">
+                    <span class="inline-block w-fit sm:w-48  sm:mr-3">{{tech.name}}</span>
+                    <i class="fa-solid fa-right-long  mr-5 hidden sm:block text-crimson"></i>
+                    <i class="fa-solid fa-down-long block sm:hidden my-3 text-crimson"></i>
+                    <span class=" inline-block transition-all sm:hover:ml-2">{{tech.lang}}</span>
+                </p>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,24 @@
+<div id="home" class=" min-h-screen relative text-white-normal">
+    <div class="layout absolute inset-0 bg-black bg-opacity-70 flex justify-center items-center flex-col ">
+        <h4 class=" text-xl md:text-2xl font-medium mb-2">Hello, I'm</h4>
+        <h2 class=" text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-2">Ahmed Sherif</h2>
+        <ngx-typed-js [strings]="jobTitles" [typeSpeed]="50" [loop]="true" [smartBackspace]="true" [shuffle]="true">
+            <span class="font-bold text-xl md:text-2xl">I'm a </span>
+            <span class="typing font-bold text-xl md:text-2xl capitalize"></span>
+        </ngx-typed-js>
+        <div class="btns flex flex-col md:flex-row justify-center items-center mt-6">
+            <a routerLink="/contact"
+                class=" border-crimson border-solid border w-40 text-center py-2 rounded-3xl text-crimson hover:text-white-normal hover:bg-crimson transition uppercase mr-0 md:mr-5 mb-5 md:mb-0">
+                Hire Me
+            </a>
+            <a routerLink="/about"
+                class=" border-crimson border-solid border w-40 text-center py-2 rounded-3xl text-crimson hover:text-white-normal hover:bg-crimson transition uppercase">
+                Know Me
+            </a>
+        </div>
+    </div>
+
+    <a routerLink="/about" class=" cursor-pointer text-xl hover:text-cborder-crimson">
+        <i class="fa-solid fa-angles-down absolute z-20 animate-bounce bottom-4 left-1/2 "></i>
+    </a>
+</div>

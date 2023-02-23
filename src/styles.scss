@@ -1,1 +1,43 @@
 /* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap");
+
+html,
+body {
+  font-family: "Rubik", sans-serif;
+}
+
+.page {
+  @apply mx-2 md:mx-12 duration-300 pt-20;
+}
+
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+  scrollbar-width: auto;
+  scrollbar-color: #db143c #ffffff;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 8px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #db143c;
+  border-radius: 10px;
+  border: 0px solid #ffffff;
+}
+
+// @media screen and (width >=768px) {
+//     .page {
+//         padding-top: 0px;
+//     }
+// }

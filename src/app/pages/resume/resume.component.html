@@ -1,0 +1,44 @@
+<section class="page" [@slideDownUp]>
+    <!-- <app-page-title [title]="'more about me'"></app-page-title> -->
+
+    <div class="title relative flex justify-center items-center mb-10 py-7">
+        <h1 class=" absolute md:tracking-widest uppercase font-semibold opacity-10 text-9xl hidden sm:block">summary
+        </h1>
+        <h2
+            class=" z-10 font-semibold text-4xl relative before:absolute before:w-1/2 before:h-[3px] pb-1 before:bg-crimson before:bottom-0 before:left-1/2 before:-translate-x-1/2 selection:before:bg-transparent ">
+            Resume
+        </h2>
+    </div>
+
+    <div class="content flex justify-start items-start flex-wrap">
+        <div
+            class="work w-full xl:w-1/2 flex justify-center xl:justify-start items-center xl:items-start flex-col flex-wrap">
+            <app-page-title [title]="'experience'"></app-page-title>
+            <div *ngFor="let item of workArr" class=" bg-white-titan dark:bg-cinder-dark w-[500px] max-w-full p-6
+            mb-6 rounded">
+                <p class=" bg-crimson rounded w-fit p-1 text-sm mb-3 font-light">{{item.period}}</p>
+                <h2 class=" capitalize font-medium text-xl mb-2">{{item.name}}</h2>
+                <p class="mb-4">
+                    <a [href]="item.platform.link" target="_blank"
+                        class="capitalize text-crimson hover:underline transition ">@ {{item.platform.name}}</a>
+                </p>
+                <p>{{item.description}}</p>
+            </div>
+        </div>
+        <div
+            class="edu w-full xl:w-1/2 flex justify-center xl:justify-start items-center xl:items-start flex-col flex-wrap ">
+            <app-page-title [title]="'educational'"></app-page-title>
+            <div *ngFor="let item of eduArr" class=" bg-white-titan dark:bg-cinder-dark w-[500px] max-w-full p-6
+            mb-6 rounded">
+                <p class=" bg-crimson rounded w-fit p-1 text-sm mb-3 font-light">{{item.period}}</p>
+                <h2 class=" capitalize font-medium text-xl mb-2">{{item.name}}</h2>
+
+                <p class="mb-4">
+                    <a [href]="item.platform.link" target="_blank"
+                        class="capitalize text-crimson hover:underline transition">{{item.platform.name}}</a>
+                </p>
+                <p>{{item.description}}</p>
+            </div>
+        </div>
+    </div>
+</section>
