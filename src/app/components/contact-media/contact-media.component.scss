@@ -2,7 +2,7 @@
   @apply flex justify-start items-center flex-wrap;
 
   a {
-    @apply mr-5 rounded transition-all duration-300 flex justify-center items-center w-14 h-14 text-3xl hover:text-4xl bg-crimson overflow-hidden relative hover:before:-top-4 hover:before:-left-3;
+    @apply mb-2 mr-3 xl:mr-5 rounded transition-all duration-300 flex justify-center items-center w-14 h-14 text-3xl hover:text-4xl bg-crimson overflow-hidden relative hover:before:-top-4 hover:before:-left-3;
 
     &::before {
       @apply content-[''] absolute w-[150%] h-[150%] rotate-45 top-full left-[-110%] transition-all duration-300;
