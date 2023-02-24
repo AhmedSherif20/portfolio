@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavLink } from 'src/app/models/nav link';
+import { SidenavService } from 'src/app/services/sidenav/sidenav.service';
 
 @Component({
   selector: 'app-nav-links',
@@ -39,4 +40,10 @@ export class NavLinksComponent {
       path: '/contact',
     },
   ];
+
+  constructor(private sideNavService: SidenavService) {}
+
+  closeNav(): void {
+    this.sideNavService.sidenavBS.next(false);
+  }
 }

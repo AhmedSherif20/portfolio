@@ -32,7 +32,7 @@ export class ResumeComponent {
 
   workArr: Resume[] = [
     {
-      name: 'jr. software engineer',
+      name: 'jr. frontend developer',
       platform: {
         name: 'evold',
         link: 'https://www.evold.co/',

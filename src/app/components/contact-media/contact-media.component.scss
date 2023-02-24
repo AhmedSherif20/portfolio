@@ -1,1 +1,71 @@
+.media-links {
+  @apply flex justify-start items-center flex-wrap;
 
+  a {
+    @apply mr-5 rounded transition-all duration-300 flex justify-center items-center w-14 h-14 text-3xl hover:text-4xl bg-crimson overflow-hidden relative hover:before:-top-4 hover:before:-left-3;
+
+    &::before {
+      @apply content-[''] absolute w-[150%] h-[150%] rotate-45 top-full left-[-110%] transition-all duration-300;
+    }
+    i {
+      @apply z-30;
+    }
+  }
+
+  a.facebook::before {
+    background-color: #3b5998;
+  }
+  a.whatsApp::before {
+    background-color: #25d366;
+  }
+  a.instagram::before {
+    background: radial-gradient(
+        circle farthest-corner at 35% 90%,
+        #fec564,
+        transparent 50%
+      ),
+      radial-gradient(
+        circle farthest-corner at 0 140%,
+        #fec564,
+        transparent 50%
+      ),
+      radial-gradient(
+        ellipse farthest-corner at 0 -25%,
+        #5258cf,
+        transparent 50%
+      ),
+      radial-gradient(
+        ellipse farthest-corner at 20% -50%,
+        #5258cf,
+        transparent 50%
+      ),
+      radial-gradient(
+        ellipse farthest-corner at 100% 0,
+        #893dc2,
+        transparent 50%
+      ),
+      radial-gradient(
+        ellipse farthest-corner at 60% -20%,
+        #893dc2,
+        transparent 50%
+      ),
+      radial-gradient(
+        ellipse farthest-corner at 100% 100%,
+        #d9317a,
+        transparent
+      ),
+      linear-gradient(
+        #6559ca,
+        #bc318f 30%,
+        #e33f5f 50%,
+        #f77638 70%,
+        #fec66d 100%
+      );
+  }
+  a.google::before {
+    background-color: #f4b400;
+  }
+  a.linkedin::before {
+    background-color: #0077b5;
+  }
+}

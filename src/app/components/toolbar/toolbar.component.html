@@ -3,5 +3,11 @@
     <h2 class=" font-semibold relative text-2xl">Ahmed Sherif <span
             class="bg-crimson w-[5px] h-[5px] rounded-full inline-block absolute bottom-1 -right-[7px]"></span>
     </h2>
-    <i class="fa-solid fa-bars rounded  cursor-pointer text-3xl" (click)="toggleSideNav()"></i>
+    <!-- <i class="fa-solid fa-bars rounded  cursor-pointer text-3xl" ></i> -->
+
+    <div class="nav-icon" [class.change]='navState' (click)="toggleSideNav()">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+    </div>
 </div>

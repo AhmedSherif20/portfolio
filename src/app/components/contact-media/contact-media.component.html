@@ -1,8 +1,25 @@
 <div class="form bg-white-titan dark:bg-cinder-dark p-8">
     <h2 class=" font-medium text-2xl mb-8 capitalize">
         Let's make something new, different, more meaningful, and awesome?
-        <span class="text-crimson">Just say hello!</span>
+        <span class="inline xl:block text-crimson">Just say hello!</span>
     </h2>
 
+    <p class=" font-light leading-relaxed capitalize mb-5 flex flex-col">
+        <span>
+            don't wait any more contact me via any social media method and discuss details with me and let me end your
+            job
+            fast.
+        </span>
+        <span>
+            no worries needed, it's a free service and your details will be secret and safe
+            😉.
+        </span>
+    </p>
 
+    <div class="media-links">
+        <a [href]="item.link" target="_blank" *ngFor="let item of linksArr" [class]="item.name">
+            <i class="fa-brands" [class]="item.icon"></i>
+            <!-- <i class="fa-brands fa-whatsapp"></i> -->
+        </a>
+    </div>
 </div>

@@ -1,4 +1,4 @@
-<a [routerLink]="link.path" routerLinkActive="active"
+<a [routerLink]="link.path" routerLinkActive="active" (click)="closeNav()"
     class="link block px-8 pb-4 mb-4 transition-all hover:text-crimson border-b-[1px] border-cinder-light dark:border-white-light border-solid "
     *ngFor="let link of links">
     <i [class]="link.icon" class="mr-4 "></i>

@@ -1,4 +1,5 @@
 <div (click)="toggleMode()"
-    class="mode cursor-pointer bg-cinder-dark dark:bg-white-normal w-12 h-12 rounded-full flex justify-center items-center text-white-normal dark:text-black fixed right-2 md:right-7 top-20 lg:top-5 hover:text-crimson dark:hover:text-crimson">
-    <i class="fa-solid fa-sun text-2xl " [ngClass]="mode === 'dark' ? 'fa-sun' : 'fa-moon'"></i>
+    class="mode group cursor-pointer bg-cinder-dark dark:bg-white-normal w-12 h-12 rounded-full flex justify-center items-center text-white-normal dark:text-black fixed right-2 md:right-7 top-20 lg:top-5 hover:text-crimson dark:hover:text-crimson">
+    <i class="fa-solid fa-sun text-2xl group-hover:scale-125 transition-all duration-200 "
+        [ngClass]="mode === 'dark' ? 'fa-sun' : 'fa-moon'"></i>
 </div>
